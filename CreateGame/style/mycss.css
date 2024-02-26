@@ -1,0 +1,187 @@
+.page_background {
+    background-image: url("../images/Page_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.game_background {
+    background-image: url("../images/Football_field.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+.Start_game_button {
+    display: inline-block;
+    padding: 0.6vw 1.2vw;
+    font-size: 0.8vw;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: black;
+    color: var(--romance, #fff);
+    border-radius: 0.2vw;
+    border: none;
+    cursor: pointer;
+    margin-left: 45%;
+    margin-top: 20%;
+}
+
+.Return_button {
+    display: inline-block;
+    padding: 0.6vw 1.2vw;
+    font-size: 0.8vw;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: black;
+    color: var(--romance, #fff);
+    border-radius: 0.2vw;
+    border: none;
+    cursor: pointer;
+}
+
+.EnemyCards{
+    margin-bottom: -6.1vw;
+    margin-top: 13vw;
+}
+
+.Card {
+    width: 5vw;
+    height: 8vw;
+    background: #ebecee;
+    /* border: 0.05vw solid black; */
+    margin: 3vw;
+
+    display: flex; /* Используем flexbox для центрирования по вертикали и горизонтали */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    background-color: transparent; /* Прозрачный фон */
+    transition: background-color 0.3s; /* Плавное изменение цвета фона при наведении */
+}
+
+.Card:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Подсветка при наведении (черный цвет с прозрачностью 50%) */
+}
+
+.Card:active {
+    background-color: rgba(255, 0, 0, 0.5); /* Изменение цвета при нажатии (красный цвет с прозрачностью 50%) */
+}
+
+.Defenders {
+    margin-left: 40.3vw;
+    width: 40vw;
+    height: 8vw;
+}
+
+.Defenders > .Card {
+    float: left;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: -2vw;
+}
+
+.EnemyCards > .GoalKeeper {
+    display: inline-block;
+    margin-left: 45.3vw;
+    margin-top: -7.5vw;
+}
+
+.MyCards > .GoalKeeper {
+    display: inline-block;
+    margin-left: 45.3vw;
+    margin-top: -5vw;
+}
+
+.MyCards > .Defenders {
+    margin-top: -4vw;
+}
+
+.MyCards > .MyCardsArray > .CardsDeck {
+    margin-top: -10vw;
+}
+
+.EnemyCards > .EnemyCardsArray > .CardsDeck {
+    margin-bottom: -10vw;
+}
+
+.CardsDeck {
+    width: 5vw;
+    height: 8vw;
+        
+    margin-left: 80vw;
+    margin-top: -4vw;
+
+    display: flex; /* Используем flexbox для центрирования по вертикали и горизонтали */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+}
+
+.GameWindow{
+    margin-top: 2vw;
+}
+
+.EnemyCards > .Attack{
+    margin-top: -8vw;
+}
+
+.Attack > .Card{
+    margin-left: 80vw;
+}
+
+.image_style{
+    max-width: 100%; /* Максимальная ширина изображения равна ширине контейнера */
+    max-height: 100%; /* Максимальная высота изображения равна высоте контейнера */
+    object-fit: contain; /* Подгоняем изображение внутри контейнера */
+}
+
+.score {
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #333;
+    position: absolute;
+    left: 0;
+    max-width: 100%; /* Максимальная ширина изображения равна ширине контейнера */
+    max-height: 100%; /* Максимальная высота изображения равна высоте контейнера */
+    object-fit: contain; /* Подгоняем изображение внутри контейнера */
+    text-align: center;
+    margin-left: 15%;
+}
+
+.scoreboard {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 2vw;
+    border-radius: 0.3vw;
+    width: 20vw;
+    display: flex; /* Используем flexbox для центрирования по вертикали и горизонтали */
+    margin: 1vw;
+    margin-top: -40vw;
+}
+
+.EnemyCardsArrayCount {
+    font-size: 4vw;
+    margin-left: -3vw;
+    max-width: 100%; /* Максимальная ширина изображения равна ширине контейнера */
+    max-height: 100%; /* Максимальная высота изображения равна высоте контейнера */
+    object-fit: contain; /* Подгоняем изображение внутри контейнера */
+    color: white; /* Устанавливаем цвет текста на белый */
+    text-shadow: -1px -1px 0 black,  
+                1px -1px 0 black,
+                -1px 1px 0 black,
+                1px 1px 0 black; /* Создаем черную обводку вокруг текста */
+}
+
+.MyCardsArrayCount {
+    font-size: 4vw;
+    margin-left: -3vw;
+    max-width: 100%; /* Максимальная ширина изображения равна ширине контейнера */
+    max-height: 100%; /* Максимальная высота изображения равна высоте контейнера */
+    object-fit: contain; /* Подгоняем изображение внутри контейнера */
+    color: white; /* Устанавливаем цвет текста на белый */
+    text-shadow: -1px -1px 0 black,  
+                1px -1px 0 black,
+                -1px 1px 0 black,
+                1px 1px 0 black; /* Создаем черную обводку вокруг текста */
+}
